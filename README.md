@@ -4,9 +4,7 @@
 
 ## 簡介
 
-這個是我自己獨立製作的小專案，主要是透過Docker部署一個Line機器人，這個Line機器人可以主動推播訊息提醒學生上課時間，使用者也可以與機器人進行互動，輸入關鍵字查詢教學相關表單。詳細說明可參考我的[部落格文章](https://suyenting.github.io/post/linebot-ceb102-class-helper/)
-
-## Line機器人架構圖
+這個是我自己獨立製作的小專案，主要是透過Docker部署一個Line機器人，這個Line機器人可以主動推播訊息提醒學生上課時間，使用者也可以與機器人進行互動，輸入關鍵字查詢教學相關表單。詳細說明可參考我的[部落格文章](https://suyenting.github.io/post/linebot-ceb102-class-helper/)。
 
 ![](https://github.com/SuYenTing/linebot-ceb102/blob/main/LineBot-Framework.png)
 
@@ -25,7 +23,7 @@
 
 ## 執行說明
 
-因有私人資訊，故依此Github內的檔案會無法順利執行程式。
+因有私人資訊(例如Line的token或資料庫帳密)，所以部分資訊有移除，故依此Github內的檔案會無法順利執行程式。
 
 此處列出我部署的步驟提供參考：
 
