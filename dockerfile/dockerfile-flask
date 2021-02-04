@@ -1,0 +1,7 @@
+FROM python:3.7-alpine
+WORKDIR /code
+ENV FLASK_APP=main.py
+ENV FLASK_RUN_HOST=0.0.0.0
+RUN pip install Flask==1.0.2 requests line-bot-sdk mysql-connector-python flask_apscheduler
+EXPOSE 5000
+CMD ["flask", "run"]

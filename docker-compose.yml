@@ -1,0 +1,27 @@
+version: '3'
+services:
+
+  web:
+    build:
+      context: ./dockerfile
+      dockerfile: dockerfile-flask
+    container_name: chatbot_web
+    restart: always
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./app:/code
+    environment:
+      FLASK_ENV: development
+      
+  ngrok:
+    image: wernight/ngrok
+    container_name: chatbot_ngrok
+    tty: true
+    stdin_open: true
+    restart: always
+    ports:
+      - "4040:4040"
+    depends_on:
+      - web
+    command: ngrok http chatbot_web:5000 -region ap
