@@ -1,2 +1,0 @@
-FROM jupyter/base-notebook
-RUN pip install Flask==1.0.2 requests line-bot-sdk mysql-connector-python flask_apscheduler
